@@ -1,5 +1,3 @@
-
-let options = ["true", "false"]
 let etat_piece = "";
 let replay = true;
 
@@ -8,11 +6,10 @@ function lancer(){
     if (etat_piece === 1) {
         etat_piece = "pile";
     }
-    else if (etat_piece === 2) {
+    else {
         etat_piece = "face";
     }
     console.log(etat_piece);
-    return etat_piece;
 }
 while (replay == true) {
     let choixUser = prompt("Pile ou Face ?").toLowerCase();
@@ -29,4 +26,5 @@ while (replay == true) {
         alert("Perdu !");
         replay = confirm("Voulez-vous rejouer ?");
     }
+
 }
